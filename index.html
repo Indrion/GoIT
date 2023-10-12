@@ -8,7 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -19,7 +25,7 @@
                 <h1 class="my-city-title">Харків</h1>
 
                 <p class="my-cyti-descr">
-                    Заснований 1654 року, налічує більше 1,4 млн. українців та є одним із 
+                    Заснований 1654 року, налічує більше 1,4 млн. українців та є одним із
                     найбільших
                     міст
                     України. Могутнє, світле та мальовниче, його називають першою столицею та вважають науковим центром
@@ -39,16 +45,107 @@
 
     <section class="form-page">
         <form action="#" class="form" id="form" netlify>
-            <h2 class="form-title">Підпишись на новини міста </h2>       
+            <h2 class="form-title">Підпишись на новини міста </h2>
             <input type="text" class="form-field" id="user-name" name="Ім'я користувача" placeholder="Ім'я">
             <input type="email" class="form-field" id="user-email" name="Email користувача" placeholder="Email">
             <button class="form-submit-btn" id="form-submit-btn">
                 Підписатися
             </button>
-        </form> 
+        </form>
 
     </section>
-<script src="js/form.js"></script>
+
+    <section class="gallery-page">
+        <h2 class="gallery-title">Харків = місто студентів</h2>
+        <div class="wrap">
+            <div class="gallery">
+                <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="0">
+                    <img src="images/1.jpg" alt="Kh photo 1" class="city-photo">
+                </button>
+                <button class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="1">
+                    <img src="images/2.jpg" alt="Kh photo 2" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="2">
+                    <img src="images/3.jpg" alt="Kh photo 3" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="3">
+                    <img src="images/4.jpg" alt="Kh photo 4" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="4">
+                    <img src="images/5.jpg" alt="Kh photo 5" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="5">
+                    <img src="images/6.jpg" alt="Kh photo 6" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="6">
+                    <img src="images/7.jpg" alt="Kh photo 7" class="city-photo">
+                </button>
+                <button
+                    class="gallery-modal-btn" data-micromodal-trigger="modal" data-index="7">
+                    <img src="images/8.jpg" alt="Kh photo 8" class="city-photo">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-title">
+                        Cвітлини міста Харкова
+                    </h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-content">
+                    <div class="splide" role="group" aria-label="city-gallery">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="images/1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/2.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/3.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/4.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/5.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/6.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/7.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/8.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="js/form.js"></script>
+    <script src="js/slider&modal.js"></script>
+
+   
 </body>
 
 </html>

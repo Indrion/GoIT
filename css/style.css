@@ -96,15 +96,48 @@ body {
     line-height: 24px;
 }
 
-.form-submit-btn{
+.form-submit-btn {
     border-radius: 12px;
-background: #FF6B0A;
-padding: 12px 24px;
-box-sizing: border-box;
-border: none;
-width: 300px;
-color: #FFF;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+    background: #FF6B0A;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    border: none;
+    width: 300px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.gallery-page {
+    padding-bottom: 88px;
+}
+
+.gallery-title {
+    margin-bottom: 80px;
+    color: #1B1D1F;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery-modal-btn{
+    width: calc(25% - (3 * 25px / 4));
+    border: none;
+    background: none;
+    margin-bottom: 24px;
+    border-radius: 48px;
+    cursor: pointer;
+   
+}
+.city-photo{
+    width: 100%;
+    border-radius: 48px;
 }
